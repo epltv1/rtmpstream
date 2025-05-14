@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream History</title>
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Stream History</h1>
+  <div class="container">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <table id="streamTable">
+      <thead>
+        <tr>
+          <th>Stream URL</th>
+          <th>RTMP Destination</th>
+          <th>Status</th>
+          <th>Started At</th>
+        </tr>
+      </thead>
+      <tbody id="streamList"></tbody>
+    </table>
+    <div class="player-container">
+      <h3>Stream Preview</h3>
+      <video id="videoPlayer" class="video-js vjs-default-skin" controls width="640" height="360">
+        <source id="videoSource" src="" type="application/x-mpegURL">
+      </video>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+  <script src="history.js"></script>
+</body>
+</html>
