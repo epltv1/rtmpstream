@@ -11,7 +11,7 @@ h1 {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #fff;
   padding: 20px;
@@ -50,13 +50,47 @@ button:hover {
   background-color: #0056b3;
 }
 
-.player-container {
-  margin-top: 20px;
-  display: none;
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
 }
 
-.player-container.active {
-  display: block;
+.back-link:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td.status-pending {
+  color: #ffa500;
+}
+
+td.status-live {
+  color: #008000;
+}
+
+td.status-ended {
+  color: #ff0000;
+}
+
+.player-container {
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -66,5 +100,8 @@ button:hover {
   video {
     width: 100%;
     height: auto;
+  }
+  table {
+    font-size: 14px;
   }
 }
