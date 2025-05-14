@@ -1,10 +1,11 @@
 # RTMP Multistreaming Site
 
-A simple web application to input YouTube or M3U8 stream URLs, specify an RTMP destination, and display the stream using Video.js. Deployable on GitHub and Vercel.
+A web application to input YouTube or M3U8 stream URLs, specify an RTMP destination, and view a history of streams with statuses (Pending, Live, Ended). Deployable on GitHub and Vercel.
 
 ## Features
 - Input YouTube or M3U8 stream URLs
-- Specify RTMP URL and stream key for multistreaming
+- Specify RTMP URL and stream key
+- History page with stream list and statuses
 - Video playback using Video.js
 - Responsive design
 
